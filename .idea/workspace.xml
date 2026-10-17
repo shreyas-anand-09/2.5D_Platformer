@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28719357-a628-496c-bad6-9ba02af68b5e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Platformer game using ursina.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="28719357-a628-496c-bad6-9ba02af68b5e" name="Changes" comment="first commit. added basic movement and platform entities as well as a main menu screen and a temporary level 1 completion system.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,210 +23,106 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;shreyas-anand-09&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/shreyas-anand-09/2.5D_Platformer.git&quot;,
+    &quot;accountId&quot;: &quot;34c4113c-4db6-4c96-8a1f-0bb85783f40f&quot;
+  }
+}</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0103820982435285" />
-      <entry key="MS500" value="1.4962959686372872" />
-      <entry key="S2" value="2.7136115818855537" />
-      <entry key="S5" value="3.5893734268858397" />
-      <entry key="S10" value="5.070397492083797" />
-      <entry key="S30" value="13.962543003539473" />
-      <entry key="S60" value="23.734824087081265" />
-      <entry key="M2" value="33.56852656079202" />
-      <entry key="M5" value="51.94531681639456" />
-      <entry key="M10" value="79.58240958855059" />
-      <entry key="M15" value="104.64766168434032" />
-      <entry key="M30" value="165.09117702797846" />
-      <entry key="H1" value="233.85126107665943" />
-      <entry key="H2" value="289.81980092257174" />
-      <entry key="H4" value="326.2301076652098" />
-      <entry key="D1" value="362.12598884380304" />
-      <entry key="W1" value="368.85997491499637" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="5.3723765078267664E-173" />
+      <entry key="S2" value="8.565704414084189E-44" />
+      <entry key="S5" value="6.3671436692281456E-18" />
+      <entry key="S10" value="3.4580139202262143E-9" />
+      <entry key="S30" value="0.0036736173339095408" />
+      <entry key="S60" value="0.17115339760180942" />
+      <entry key="M2" value="1.6338742554523666" />
+      <entry key="M5" value="10.260552904440635" />
+      <entry key="M10" value="30.717951752563252" />
+      <entry key="M15" value="55.0647872030618" />
+      <entry key="M30" value="130.56268592340038" />
+      <entry key="H1" value="245.14323651815013" />
+      <entry key="H2" value="362.2132964375891" />
+      <entry key="H4" value="450.0865810552003" />
+      <entry key="D1" value="545.7990612490263" />
+      <entry key="W1" value="564.758835066592" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.3842862750342322E-151" />
-      <entry key="S2" value="1.928885632608383E-38" />
-      <entry key="S5" value="8.205831432992293E-16" />
-      <entry key="S10" value="2.8645822440616345E-8" />
-      <entry key="S30" value="0.0030598736810358088" />
-      <entry key="S60" value="0.05565499734149578" />
-      <entry key="M2" value="0.2536535748384516" />
-      <entry key="M5" value="0.7844160004856069" />
-      <entry key="M10" value="1.523084431067304" />
-      <entry key="M15" value="2.366422700559121" />
-      <entry key="M30" value="4.971400707946661" />
-      <entry key="H1" value="8.438343298596795" />
-      <entry key="H2" value="11.46570741342986" />
-      <entry key="H4" value="13.50082314448877" />
-      <entry key="D1" value="15.546652586007749" />
-      <entry key="W1" value="15.934267397034503" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.000000000378225" />
+      <entry key="S30" value="1.0009026684049898" />
+      <entry key="S60" value="1.05246530566043" />
+      <entry key="M2" value="1.5519838553067875" />
+      <entry key="M5" value="3.871870581364464" />
+      <entry key="M10" value="6.378724816900078" />
+      <entry key="M15" value="7.880669514420372" />
+      <entry key="M30" value="10.900986605919787" />
+      <entry key="H1" value="15.198457949487453" />
+      <entry key="H2" value="19.943623505484588" />
+      <entry key="H4" value="23.715850940506016" />
+      <entry key="D1" value="27.988099436241853" />
+      <entry key="W1" value="28.851816897235825" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9558796986040413" />
-      <entry key="MS500" value="1.4795611428309023" />
-      <entry key="S2" value="2.7053640987708136" />
-      <entry key="S5" value="3.584809371370129" />
-      <entry key="S10" value="5.0670178059588835" />
-      <entry key="S30" value="13.96199156442219" />
-      <entry key="S60" value="23.785779403746737" />
-      <entry key="M2" value="33.81162269587645" />
-      <entry key="M5" value="52.698611636732" />
-      <entry key="M10" value="81.06192861851704" />
-      <entry key="M15" value="106.96744665135856" />
-      <entry key="M30" value="170.01787479523725" />
-      <entry key="H1" value="242.25507228153708" />
-      <entry key="H2" value="301.2632862865816" />
-      <entry key="H4" value="339.7182082454531" />
-      <entry key="D1" value="377.67025627530523" />
-      <entry key="W1" value="384.7938944821192" />
+      <entry key="MS100" value="3.4042874359689684E-9" />
+      <entry key="MS500" value="0.020249077584895834" />
+      <entry key="S2" value="0.37722573299598705" />
+      <entry key="S5" value="0.6770808401743433" />
+      <entry key="S10" value="0.8228492243236174" />
+      <entry key="S30" value="0.9414840035497735" />
+      <entry key="S60" value="1.1877919765524227" />
+      <entry key="M2" value="3.1533798520626193" />
+      <entry key="M5" value="14.09377491241087" />
+      <entry key="M10" value="37.05667449463723" />
+      <entry key="M15" value="62.90587961494593" />
+      <entry key="M30" value="141.42503769737567" />
+      <entry key="H1" value="260.3069803688917" />
+      <entry key="H2" value="382.13115544733756" />
+      <entry key="H4" value="473.7862820715811" />
+      <entry key="D1" value="573.7838632316441" />
+      <entry key="W1" value="593.61016357639" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3KpdqkfF84IB5hp1zatZhASHWdo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="Platformer game using ursina" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="false" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="Platformer game using ursina" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="false" />
-      <option name="RUN_TOOL" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="Platformer game using ursina" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="false" />
-      <option name="RUN_TOOL" value="" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="Platformer game using ursina" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="false" />
-      <option name="RUN_TOOL" value="" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Autodetect">
-      <module name="Platformer game using ursina" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="false" />
-      <option name="RUN_TOOL" value="" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="Platformer game using ursina" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="false" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-  </component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -247,9 +138,33 @@
       <option name="presentableId" value="Default" />
       <updated>1792258636951</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit. added basic movement and platform entities as well as a main menu screen and a temporary level 1 completion system.">
+      <option name="closed" value="true" />
+      <created>1792264887722</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1792264887722</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit. added basic movement and platform entities as well as a main menu screen and a temporary level 1 completion system." />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit. added basic movement and platform entities as well as a main menu screen and a temporary level 1 completion system." />
   </component>
 </project>
